@@ -1,6 +1,4 @@
-Hi everyone, my name is David 
-
-customized plugines
+my own customized plugines
 ================
 
 
