@@ -6,7 +6,9 @@ color scheme
 ------------
 ### mytorte
 
-    improve folded color to more dark and pretty
+    based on popular color scheme torte
+    modification:
+        improve folded color to more dark and pretty
 
 
 
