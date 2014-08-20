@@ -12,13 +12,21 @@ syn match BadResult +\c\(^R[:：].*\)\@<=\<\(interrupted\|distracted\|sleepy\)\>
 syn match GoodResult +\c\(^R[:：].*\)\@<=\<\(done\)\>+
 syn match TODO +\<TODO:.*$+
 
-highlight LogHeader guifg=pink
+highlight LogHeader guifg=purple
 highlight ObjectiveText guifg=lightblue
 highlight BadResult guifg=Red
 highlight GoodResult guifg=White
 highlight TODO guifg=blue guibg=yellow
 
 set spell
+
+" rapid add a Log
+inoreabbr <buffer> GTDLOG 
+            \<CR><C-R>=strftime('%Y-%m-%d %H:%M:%S')<CR>
+            \<CR>O:
+            \<CR>R:<UP><UP>
+            
+
 
 
 
